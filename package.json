@@ -69,7 +69,7 @@
     "webpack-uglify-parallel": "^0.1.4"
   },
   "scripts": {
-    "dev": "webpack-dev-server --config ./build/webpack.dev.config.js",
+    "start": "webpack-dev-server --config ./build/webpack.dev.config.js",
     "build:dev": "rm -rf ./dist/dev/ && webpack --config ./build/webpack.local.config.js",
     "build:prod": "rm -rf ./dist/prod && webpack --config ./build/webpack.prod.config.js",
     "build:test": "rm -rf ./dist/test && webpack --config ./build/webpack.test.config.js",

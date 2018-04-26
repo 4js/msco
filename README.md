@@ -58,3 +58,7 @@ npm run build:dev (编译开发---dev)
 + react:[教程](https://reactjs.org/)
 + react-router:[教程](https://reacttraining.com/react-router/web/guides/philosophy)
 + redux教程:[教程一](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)、[教程二](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html)、[教程三](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
+
+### 联系作者
+
+    * 962116239@qq.com
