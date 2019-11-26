@@ -1,64 +1,68 @@
-### 技术栈
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
- react + react-router + webpack + antd + less + axios
+## Available Scripts
 
-### 项目运行
+In the project directory, you can run:
 
-```
-git clone git@github.com:4js/msco.git
+### `yarn start`
 
-cd msco （进入当前的项目）
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-npm install  (安装依赖包)
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-npm start (运行本地开发环境)
+### `yarn test`
 
-npm run build:prod (编译线上---prod)
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-npm run build:test (编译测试---test)
+### `yarn build`
 
-npm run build:dev (编译开发---dev)
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 目录结构
+### `yarn eject`
 
-```
-├─.babelrc                            // babel的配置
-├─.config.json                        // 如果使用了ip代理，那么配置文件在这里
-├─.eslintcache                        // eslint的缓存
-├─.eslintignore                       // eslint设置忽略的文件
-├─.eslintrc.json                      // eslint的配置文件
-├─.gitignore                          // git忽略上传的文件
-├─package.json                        // npm命令包
-├─readme.md                           // 项目介绍
-├─docs                                // 文档
-├─build
-|  ├─webpack.base.config.js            // 基础编译配置文件
-|  ├─webpack.dev.config.js            // 开发环境配置文件
-|  ├─webpack.prod.config.js            // 线上环境编译配置文件
-|  ├─webpack.pdev.config.js            // 开发环境编译配置文件
-|  ├─webpack.test.config.js            // 测试环境编译配置文件
-├─app                                 // 页面主文件
-|  ├─index.js
-|  ├─utils                            // 公用的文件
-|  ├─style                            // 样式库
-|  |   └theme.less                    // 存放变量的less
-|  ├─pages                            // 项目绝大部分业务文件
-|  ├─assets                           // 图片文件夹
-|  ├─components                       // 公用的组件库 
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### 文档
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 参考链接
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-+ es6:[教程](http://es6.ruanyifeng.com/)
-+ react:[教程](https://reactjs.org/)
-+ react-router:[教程](https://reacttraining.com/react-router/web/guides/philosophy)
-+ redux教程:[教程一](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)、[教程二](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html)、[教程三](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### 联系作者
+## Learn More
 
-    * 962116239@qq.com
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
