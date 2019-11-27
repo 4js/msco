@@ -6,6 +6,7 @@ import {
 
 import Register from './pages/register';
 import Login from './pages/login';
+import Order from './pages/order';
 
 // import http from './server';
 import './App.css';
@@ -22,6 +23,7 @@ function App(props) {
       <Router>
         <Route path="/register" component={Register}></Route>
         <Route path="/login" component={Login}></Route>
+        <Route path="/order" component={Order}></Route>
       </Router>
     </div>
   );
