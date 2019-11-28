@@ -1,0 +1,30 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout-header{
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+  overflow: hidden;
+  .logo{
+    width: 90px;
+    height: 31px;
+    font-weight: 600;
+    line-height: 31px;
+    color: #001529;
+    margin: 16px 28px 16px 0;
+    float: left;
+  }
+  .ant-menu{
+    background: #fff;
+    width: 500px;
+    float: left;
+    li{
+      color: #4D555D;
+      &:hover{
+        color: #333;
+      }
+    }
+  }
+  .header-user{
+    float: right;
+  }
+}

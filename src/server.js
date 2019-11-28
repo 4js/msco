@@ -62,17 +62,20 @@ service.interceptors.response.use(
   },
   error => {
     const response = error.response;
-    const { status } = response;
-    if (status >= 200 && status <= 300) {
-      return error;
-    }
+    if (response) {
+      const { status } = response;
+      if (status >= 200 && status <= 300) {
+        return error;
+      }
 
-    // 非200处理错误
-    let message = messageCode[status];
-    if (response.data) {
-      message = JSON.stringify(response.data);
+      // 非200处理错误
+      let message = messageCode[status];
+      if (response.data) {
+        message = JSON.stringify(response.data);
+      }
+      throw message;
     }
-    throw message;
+    throw JSON.stringify('network error');
   }
 )
 

@@ -1,0 +1,58 @@
+.right-container{
+  width: 992px;
+  margin: 36px auto;
+  .right-title{
+    margin-bottom: 20px;
+    overflow: hidden;
+    h2{
+      margin-right: 24px;
+      float: left;
+      font-size: 16px;
+      color: #07111b;
+      line-height: 32px;
+      font-weight: 700;
+    }
+    ul{
+      float: left;
+      overflow: hidden;
+      li{
+        float: left;
+        width: 95px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 12px;
+        &.action{
+          background: #4d555d;
+          border-radius: 16px;
+          a{
+            color: #fff;
+          }
+        }
+        a{
+          color: #5e5e5e;
+        }
+      }
+    }
+    .recycle{
+      float: right;
+      font-size: 12px;
+      cursor: pointer;
+      width: 128px;
+      line-height: 32px;
+      a {
+        display: block;
+        color: #5e5e5e;
+      }
+    }
+  }
+  .ant-list-item{
+    padding: 32px;
+    -webkit-box-shadow: 0 2px 8px 2px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 2px 8px 2px rgba(0,0,0,.1);
+    box-shadow: 0 2px 8px 2px rgba(0,0,0,.1);
+    margin-bottom: 24px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+  }
+}
