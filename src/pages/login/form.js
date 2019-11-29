@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import { Form, Icon, Input, Button, Checkbox, message } from 'antd';
 import http from '../../server';
 import md5 from 'md5';
 
@@ -7,12 +7,18 @@ class NormalLoginForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    let _this = this;
     this.props.form.validateFields((err, values) => {
       if (!err) {
         const { username, password } = values;
         http.post('/user/login' ,{ username, password: md5(password) }).then(res => {
-          console.log(res);
-          alert('登录成功');
+          const { token, 'user': { username } } = res.data;
+          localStorage.setItem('token', token);
+          localStorage.setItem('username', username);
+          message.success('登录成功');
+          setTimeout(function(){
+            _this.props.history.push('/order');
+          }, 1000);
         })
       }
     });

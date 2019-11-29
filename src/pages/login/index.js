@@ -4,12 +4,12 @@ import Form from './form';
 
 import './login.scss';
 
-export default function Login(){
+export default function Login(props){
   return (
     <Row type="flex" justify="space-around" align="middle" style={{ height: '100%', minWidth: '1000px'}}>
       <Col span={12}>col-12</Col>
       <Col span={12} style={{ padding: "0 100px"}}>
-        <Form />
+        <Form history={props.history} />
       </Col>
     </Row>
   )

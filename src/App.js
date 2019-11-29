@@ -2,11 +2,13 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
+  Redirect
 } from "react-router-dom";
 
 import Register from './pages/register';
 import Login from './pages/login/index';
 import Order from './pages/order/index';
+import Nofound from './pages/404';
 
 import { Layout, Menu } from 'antd';
 import User from './components/user';
@@ -37,6 +39,8 @@ function App(props) {
           <Route path="/register" component={Register}></Route>
           <Route path="/login" component={Login}></Route>
           <Route path="/order" component={Order}></Route>
+          <Route path="/404" component={Nofound}></Route>
+          <Redirect to="/404" />
         </Content>
         <Footer style={{ textAlign: 'center', color: '#93999F', fontSize: '12px' }}>
           <p>
