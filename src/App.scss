@@ -1,17 +1,32 @@
 @import '~antd/dist/antd.css';
 
+p,h1,h2,h3,h4{
+  margin-bottom: 0;
+}
+
+.container{
+  max-width: 1154px; 
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 36px 0 38px;
+}
+
+.main-content-box{
+  // min-height: 700px;
+  background-color: #fff;
+}
+
 .ant-layout-header{
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
   overflow: hidden;
   .logo{
-    width: 90px;
-    height: 31px;
-    font-weight: 600;
-    line-height: 31px;
-    color: #001529;
-    margin: 16px 28px 16px 0;
     float: left;
+    img{
+      height: 63px;
+      width: auto;
+    }
   }
   .ant-menu{
     background: #fff;
@@ -19,6 +34,9 @@
     float: left;
     li{
       color: #4D555D;
+      &.ant-menu-item-selected{
+        background-color: #fff;
+      }
       &:hover{
         color: #333;
       }
@@ -26,5 +44,26 @@
   }
   .header-user{
     float: right;
+    .ant-badge{
+      margin-right: 20px;
+    }
+  }
+}
+.ant-layout-footer{
+  background: #1c1f21;
+  ul{
+    padding-left: 0;
+    overflow: hidden;
+    li{
+      float: left;
+      margin-right: 30px;
+      a{
+        color: #c8cdd2;
+        font-weight: 500;
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
   }
 }

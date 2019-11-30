@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon, Badge, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
 const menu = (
@@ -26,9 +26,12 @@ export default function Counter() {
 
   return (
     <div className="header-user">
-      <Dropdown overlay={menu}>
+      <Badge dot>
+        <Icon type="notification" />
+      </Badge>
+      <Dropdown overlay={menu} placement="bottomLeft">
         <span className="ant-dropdown-link">
-          用户名 <Icon type="down" />
+          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
         </span>
       </Dropdown>
     </div>

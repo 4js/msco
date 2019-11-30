@@ -1,0 +1,250 @@
+.container-recommend{
+  >h3{
+    font-size: 24px;
+    color: #1C1F21;
+    letter-spacing: 0px;
+    line-height: 32px;
+    .intro{
+      margin-top: 6px;
+      margin-left: 12px;
+      font-weight: normal;
+      font-size: 14px;
+      color: #545C63;
+      line-height: 20px;
+    }
+  }
+}
+
+// 就业班 start
+.container-employ{
+  .path-list{
+    margin-top: 24px;
+    overflow: hidden;
+    >a{
+      float: left;
+      box-sizing: content-box;
+      margin-left: 18px;
+      font-size: 0;
+      display: block;
+      width: 216px;
+      padding-top: 15px;
+      height: 65px;
+      overflow: hidden;
+      transition: all .3s;
+      background: #F3F5F6;
+      border-radius: 8px;
+      &:first-child{
+        margin-left: 0;
+      }
+      i{
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-left: 12px;
+        margin-right: 10px;
+      }
+      .tit{
+        font-size: 16px;
+        font-weight: bold;
+        color: #1C1F21;
+        letter-spacing: 1px;
+        margin-top: 4px;
+      }
+      .desc{
+        font-size: 12px;
+        color: #1C1F21;
+        line-height: 16px;
+        margin-top: 2px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// 新上好课 start
+.wrapper-course{
+  background-color: #f8fafc;
+  .container-course{
+    .course-list{
+      margin-top: 24px;
+      margin-left: -24px;
+      .index-card-container {
+        float: left;
+        width: 270px;
+        height: 268px;
+        position: relative;
+        margin-left: 24px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+        transition: .3s all linear;
+        a{
+          display: inline-block;
+          &:hover h3{
+            color: #F01414;
+          }
+          .course-card-top{
+            width: 270px;
+            height: 148px;
+            position: relative;
+            border-radius: 8px;
+            transition: all .3s;
+            .course-banner{
+              width: 100%;
+              height: 100%;
+              background-color: #f3f5f7;
+              border-radius: 8px;
+            }
+            .course-label{
+              position: absolute;
+              bottom: 6px;
+              left: 8px;
+              font-size: 12px;
+              color: #FFFFFF;
+              line-height: 16px;
+              label{
+                display: inline-block;
+                background: rgba(28, 31, 33, 0.6);
+                border-radius: 4px;
+                padding: 4px 8px;
+                margin-right: 4px;
+                margin-bottom: 2px;
+                font-weight: 200;
+              }
+            }
+          }
+          .course-card-content{
+            padding: 8px;
+            .course-card-name{
+              font-size: 16px;
+              color: #07111B;
+              line-height: 24px;
+              word-wrap: break-word;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              transition: all .3s;
+              font-weight: bold;
+              height: 46px;
+            }
+            .course-card-bottom{
+              position: relative;
+              .course-card-info{
+                overflow: hidden;
+                margin-top: 4px;
+                font-size: 12px;
+                color: #9199A1;
+                line-height: 18px;
+                .course-card-price{
+                  float: left;
+                  color: #F01414 !important;
+                  font-weight: bold;
+                }
+                .js-hover-evaluation{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 新上好课 start
+
+.tail-list{
+  position: relative;
+  .ant-tabs{
+    overflow: inherit !important;
+    .ant-tabs-bar{
+      position: absolute;
+      top: -33px;
+      left: 130px;
+      border-bottom: none;
+      .ant-tabs-tab{
+        padding: 5px 0;
+        &:hover{
+          color: #F01414;
+        }
+        &.ant-tabs-tab-active{
+          color: #F01414;
+        }
+      }
+      .ant-tabs-ink-bar{
+        background-color: #F01414;
+      }
+    }
+    .ant-tabs-content{
+      margin-top: 24px;
+      // margin-left: -24px;
+    }
+  }
+  .ant-tabs-tabpane{
+    margin-left: -24px;
+  }
+  .tail-path-container{
+    float: left;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    width: 552px;
+    height: 148px;
+    overflow: hidden;
+    &:hover h4{
+      color: #F01414;
+    }
+    .tail-path-link{
+      display: inline-block;
+      color: #1c1f21;
+      .tail-banner{
+        float: left;
+        overflow: hidden;
+        position: relative;
+        transition: all .3s;
+        width: 140px;
+        height: 140px;
+        background-color: #f3f5f7;
+        border-radius: 8px;
+      }
+      h4{
+        margin: 8px 0;
+        margin-left: 164px;
+        font-size: 16px;
+        color: #1C1F21;
+        line-height: 20px;
+        min-height: 20px;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      p{
+        margin-left: 164px;
+        font-size: 14px;
+        color: #545C63;
+        letter-spacing: 0;
+        line-height: 20px;
+        height: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      .tail-path-info{
+        margin-left: 164px;
+        font-size: 12px;
+        color: #9199A1;
+        height: 18px;
+        line-height: 18px;
+        .imv2-star2{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
