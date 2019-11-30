@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![概览图]('./src/images/localhost_3000_.png')
+![概览图](./src/images/localhost_3000_.png)
 
 ## Available Scripts
 
