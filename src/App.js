@@ -1,13 +1,13 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
 } from "react-router-dom";
 
 import Home from './pages/home';
 import Register from './pages/register';
 import Login from './pages/login/index';
-import Order from './pages/order/index';
+import User from './pages/user/index';
 import Product from './pages/product/index';
 import Nofound from './pages/404';
 
@@ -25,7 +25,7 @@ function App(props) {
         <Route path="/" exact component={Home}></Route>
         <Route path="/register" component={Register}></Route>
         <Route path="/login" component={Login}></Route>
-        <Route path="/order" component={Order}></Route>
+        <Route path="/user" component={User}></Route>
         <Route path="/product" component={Product}></Route>
         <Route path="/404" component={Nofound}></Route>
         <Route to="/404" />

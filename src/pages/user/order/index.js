@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { List, Avatar } from 'antd';
-import http from '../../server';
+import http from '../../../server';
 
 import './order.scss';
 

@@ -18,9 +18,30 @@ p,h1,h2,h3,h4{
 }
 
 .ant-layout-header{
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
   overflow: hidden;
+  &.other-layout-header{
+    background-color: #07111B;
+    .ant-menu{
+      background: #07111B;
+      li{
+        color: #717A84;
+        &.ant-menu-item-selected{
+          background: #07111B;
+        }
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+    .header-user{
+      color: #717A84;
+      .ant-avatar{
+        background-color: #fff;
+      }
+    }
+  }
   .logo{
     float: left;
     img{
@@ -30,7 +51,7 @@ p,h1,h2,h3,h4{
   }
   .ant-menu{
     background: #fff;
-    width: 500px;
+    width: 600px;
     float: left;
     li{
       color: #4D555D;
@@ -46,6 +67,12 @@ p,h1,h2,h3,h4{
     float: right;
     .ant-badge{
       margin-right: 20px;
+    }
+    i{
+      padding: 0 3px;
+    }
+    .header-login-link{
+      color: #333;
     }
   }
 }

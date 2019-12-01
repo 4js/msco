@@ -17,7 +17,7 @@ class NormalLoginForm extends React.Component {
           localStorage.setItem('username', username);
           message.success('登录成功');
           setTimeout(function(){
-            _this.props.history.push('/order');
+            _this.props.history.push('/');
           }, 1000);
         })
       }

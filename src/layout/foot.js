@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Layout } from 'antd';
 const { Footer } = Layout;
 
@@ -8,7 +9,7 @@ export default function Foot(){
     <Footer style={{ color: '#787d82', fontSize: '12px' }}>
       <div className="footer_link">
         <ul>
-          <li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+          <li><Link to="/">网站首页</Link></li>
           <li><a href="//www.imooc.com/index/companytrain" target="_blank" title="企业合作">企业合作</a></li>
           <li><a href="//www.imooc.com/about/job" target="_blank">人才招聘</a></li>
           <li> <a href="//www.imooc.com/about/contact" target="_blank">联系我们</a></li>
