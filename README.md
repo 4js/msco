@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 + 支付接口 暂时未返回支付的数据
 + 拼团列表接口 返回数据缺少activity_no字段 /Home/wxHome/activityList
 + 手机号 性别 修改成功但是数据未更新 userCenter/updateUserMessage
++ 我的拼团列表/拼团活动列表接口 缺少几人团 顺便完善文档
 
 ![概览图](./src/images/localhost_3000_.png)
 
