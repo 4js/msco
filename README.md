@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 + 拼团列表接口 返回数据缺少activity_no字段 /Home/wxHome/activityList
 + 手机号 性别 修改成功但是数据未更新 userCenter/updateUserMessage
 + 我的拼团列表/拼团活动列表接口 缺少几人团 顺便完善文档
++ 获取某个类别下商品列表的接口 数据好像有问题 不管什么类别都是同一个商品
 
 ![概览图](./src/images/localhost_3000_.png)
 
