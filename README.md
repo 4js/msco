@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 + 缺少确认收货接口
 + 订单列表接口需要返回商品的id
++ 订单详情接口 需要返回地址的id
 + 缺少售后列表接口
 
 ![概览图](./src/images/localhost_3000_.png)
