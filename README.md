@@ -17,6 +17,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 + 缺少售后列表接口
 + 所有涉及到的价格改为浮点数
 
+### 2020-01-05
++ 订单列表和订单详情 如果为待收货或者已完成状态则返回物流品牌和物流单号
+
 ![概览图](./src/images/localhost_3000_.png)
 
 ## Available Scripts
