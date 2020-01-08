@@ -20,6 +20,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### 2020-01-05
 + 订单列表和订单详情 如果为待收货或者已完成状态则返回物流品牌和物流单号
 
+### 2020-01-08
++ 订单列表
+  + 如果为待收货或者已完成状态，则返回物流品牌和物流单号
+  + 增加该订单商品的g_order_no
+  + 增加商品是否是团购的字段 is_activity
++ 订单详情
+  + goodMessage里加上商品的g_order_no
+
 ![概览图](./src/images/localhost_3000_.png)
 
 ## Available Scripts
