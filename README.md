@@ -1,32 +1,4 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-### 待修改接口记录
-
-+ 地址删除接口，报错404 userCenter/delAddress
-+ 支付接口 暂时未返回支付的数据
-+ 拼团列表接口 返回数据缺少activity_no字段 /Home/wxHome/activityList
-+ 手机号 性别 修改成功但是数据未更新 userCenter/updateUserMessage
-+ 我的拼团列表/拼团活动列表接口 缺少几人团 顺便完善文档
-+ 获取某个类别下商品列表的接口 数据好像有问题 不管什么类别都是同一个商品
-
-
-### 2020-01-04
-
-+ 缺少确认收货接口
-+ 订单列表接口需要返回商品的id
-+ 订单详情接口 需要返回地址的id
-+ 缺少售后列表接口
-+ 所有涉及到的价格改为浮点数
-
-### 2020-01-05
-+ 订单列表和订单详情 如果为待收货或者已完成状态则返回物流品牌和物流单号
-
-### 2020-01-08
-+ 订单列表
-  + 如果为待收货或者已完成状态，则返回物流品牌和物流单号
-  + 增加该订单商品的g_order_no
-  + 增加商品是否是团购的字段 is_activity
-+ 订单详情
-  + goodMessage里加上商品的g_order_no
 
 ![概览图](./src/images/localhost_3000_.png)
 
