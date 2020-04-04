@@ -10,7 +10,6 @@ export default class User extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-
     }
   }
 
@@ -19,6 +18,7 @@ export default class User extends React.Component {
       <div className="main-content-box">
         <OtherHeader />
         <Route to="/order" component={Order} />
+        {this.state.num}
       </div>
     )
   }

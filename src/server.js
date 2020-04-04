@@ -55,6 +55,7 @@ service.interceptors.request.use(
 service.interceptors.response.use(
   response => {
     const { status } = response;
+    console.log(response)
     if (status >= 200 && status <= 300) {
       return response;
     }
@@ -65,15 +66,18 @@ service.interceptors.response.use(
     if (response) {
       const { status } = response;
       if (status >= 200 && status <= 300) {
-        return error;
+        window.alert(error)
+        return;
       }
 
       // 非200处理错误
       let message = messageCode[status];
       if (response.data) {
-        message = JSON.stringify(response.data);
+        message = JSON.stringify(response.data.message);
       }
-      throw message;
+      // throw message;
+      window.alert(message)
+      return;
     }
     throw JSON.stringify('network error');
   }
@@ -86,6 +90,8 @@ http.post = function(api, data){
   return new Promise((resolve, reject) => {
     service.post(api, params).then(res => {
       resolve(res.data);
+    }).catch(err => {
+      reject(err)
     })
   })
 }
@@ -95,6 +101,8 @@ http.get = function(api, data){
   return new Promise((resolve, reject) => {
     service.get(api, { params }).then(res => {
       resolve(res.data);
+    }).catch(err => {
+      reject(err)
     })
   })
 }
