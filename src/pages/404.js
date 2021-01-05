@@ -1,10 +1,15 @@
-import React from 'react';
+import React from 'react'
+import { FrownOutlined } from '@ant-design/icons'
+import { Page } from 'components'
+import styles from './404.less'
 
-export default function noFound(){
-
-  return (
-    <div>
-      <h3>页面走丢了，未找到</h3>
+const Error = () => (
+  <Page inner>
+    <div className={styles.error}>
+      <FrownOutlined />
+      <h1>404 Not Found</h1>
     </div>
-  )
-}
+  </Page>
+)
+
+export default Error
