@@ -13,6 +13,13 @@ export const routesConfig = [
     "route": "/user"
   },
   {
+    "id": "3",
+    "breadcrumbParentId": "1",
+    "name": "订单列表",
+    "icon": "history",
+    "route": "/order"
+  },
+  {
     "id": "21",
     "menuParentId": "-1",
     "breadcrumbParentId": "2",
