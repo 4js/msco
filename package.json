@@ -11,7 +11,7 @@
     "dva-model-extend": "^0.1.2",
     "enquire-js": "^0.2.1",
     "json-format": "^1.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "md5": "^2.2.1",
     "nprogress": "^0.2.0",
     "path-to-regexp": "^6.1.0",
